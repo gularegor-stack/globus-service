@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Статус заказа | Глобус Сервис</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container header-flex">
+        <div class="logo">🌐 Глобус Сервис</div>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="services.html">Цены</a>
+            <a href="upload.html">Загрузить</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="orders.html">Статус</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <h1 style="margin: 40px 0 20px;">📦 Проверить статус заказа</h1>
+    <p>Введите номер телефона, который указали при заказе</p>
+    
+    <div class="order-form" style="max-width: 500px; margin: 30px 0;">
+        <label>📞 Номер телефона</label>
+        <input type="tel" id="orderPhone" placeholder="+7 913 786-78-87">
+        <button class="btn-primary" onclick="checkOrder()" style="width: 100%;">🔍 Проверить</button>
+        <div id="orderStatus" style="margin-top: 20px; padding: 16px; border-radius: 12px; display: none;"></div>
+    </div>
+    
+    <p style="color: #64748b;">* Если вы не получили уведомление о статусе, свяжитесь с нами:</p>
+    <p style="color: #2563eb;">📞 +7 (913) 786-78-87 | 📧 eg89133963510@gmail.com</p>
+</main>
+
+<footer>
+    <div class="container">
+        <p>© 2025 Глобус Сервис — дистанционная печать фотографий</p>
+    </div>
+</footer>
+
+<script>
+function checkOrder() {
+    const phone = document.getElementById('orderPhone').value.trim();
+    const statusDiv = document.getElementById('orderStatus');
+    
+    if (!phone) {
+        alert('Введите номер телефона');
+        return;
+    }
+    
+    statusDiv.style.display = 'block';
+    statusDiv.innerHTML = 'ℹ️ Для получения статуса заказа свяжитесь с нами:<br><br>📞 +7 (913) 786-78-87<br>📧 eg89133963510@gmail.com<br>📱 Telegram: @globus_service<br><br>🕐 Режим работы:<br>Пн-Пт 9:00-18:00<br>Сб-Вс 10:00-14:00';
+    statusDiv.style.background = '#f1f5f9';
+}
+</script>
+
+</body>
+</html>

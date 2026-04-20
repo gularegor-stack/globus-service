@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | Глобус Сервис</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin: 30px 0;
+        }
+        .info-block {
+            background: white;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        .info-block h2 {
+            margin-bottom: 20px;
+            color: #2563eb;
+        }
+        .info-block p {
+            margin: 12px 0;
+            font-size: 1.05rem;
+        }
+        .map-container {
+            margin-top: 30px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .work-hours {
+            background: #f0f9ff;
+            padding: 15px;
+            border-radius: 12px;
+            margin-top: 15px;
+        }
+        .work-hours h3 {
+            color: #2563eb;
+            margin-bottom: 10px;
+        }
+        @media (max-width: 700px) {
+            .contact-info {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container header-flex">
+        <div class="logo">🌐 Глобус Сервис</div>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="services.html">Цены</a>
+            <a href="upload.html">Загрузить</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="orders.html">Статус</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <h1 style="margin: 40px 0 20px;">📞 Контакты</h1>
+    
+    <div class="contact-info">
+        <div class="info-block">
+            <h2>🏢 Адрес самовывоза</h2>
+            <p><strong>📍 Адрес:</strong><br>г. Болотное, ул. Московская, д. 34</p>
+            
+            <div class="work-hours">
+                <h3>🕐 Режим работы</h3>
+                <p><strong>Пн-Пт (будни):</strong> 9:00 - 18:00</p>
+                <p><strong>Сб-Вс (выходные):</strong> 10:00 - 14:00</p>
+            </div>
+            
+            <h2 style="margin-top: 25px;">📱 Связь с нами</h2>
+            <p><strong>📞 Телефон:</strong><br><a href="tel:+79137867887" style="color: #2563eb; text-decoration: none;">+7 (913) 786-78-87</a></p>
+            
+            <p><strong>📧 Email:</strong><br><a href="mailto:eg89133963510@gmail.com" style="color: #2563eb; text-decoration: none;">eg89133963510@gmail.com</a></p>
+            
+            <p><strong>📱 Telegram:</strong><br>@globus_service</p>
+        </div>
+        
+        <div class="info-block">
+            <h2>🗺️ Схема проезда</h2>
+            <p>📍 г. Болотное, ул. Московская, 34</p>
+            <p>🅿️ Парковка рядом со входом</p>
+            <p>🚌 Остановка "Московская" в 2 минутах ходьбы</p>
+            <p>🏪 Ориентир: напротив магазина "Пятёрочка"</p>
+        </div>
+    </div>
+    
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps?q=Болотное,+Московская+34&output=embed"
+            width="100%" 
+            height="400" 
+            style="border:0;"
+            allowfullscreen="" 
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+    <p style="text-align: center; margin-top: 10px; color: #64748b; font-size: 0.85rem;">
+        🗺️ г. Болотное, ул. Московская, 34
+    </p>
+</main>
+
+<footer>
+    <div class="container">
+        <p>© 2025 Глобус Сервис — дистанционная печать фотографий</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
