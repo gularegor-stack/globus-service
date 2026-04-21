@@ -1,12 +1,19 @@
+cat > ~/fotolab_new/index.html << 'EOF'
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Глобус Сервис | Печать фото онлайн</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<!-- Код подтверждения (скрыт, чтобы не мешал дизайну) -->
+<div style="display: none;">
+    Verification: 1bd8ebf4dd94b309
+</div>
 
 <header>
     <div class="container header-flex">
@@ -64,3 +71,4 @@
 <script src="script.js"></script>
 </body>
 </html>
+EOF
